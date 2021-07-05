@@ -1,0 +1,81 @@
+<HTML>
+	<HEAD>
+		<SCRIPT LANGUAGE="JavaScript">
+			document.write("<H1>");
+			alert("Bem-vindo ao JavaScript");
+
+			var nome=window.prompt("Infome seu nome: ","");
+
+			day = new Date();
+			hr = day.getHours();
+			document.write("Agora são ", day.getHours());
+			document.write(":" , day.getMinutes());
+			document.write("<br>");
+			if ((hr>=1)&&(hr<12))
+
+			{
+				document.write(" Bom dia, " +nome);
+				
+			}	
+			
+			if((hr>12)&&(hr<=18))
+		
+			{
+				
+				document.write("Boa tarde, " +nome);
+			}
+			
+			if((hr>18)&&(hr<=24))
+		
+			{
+		
+				document.write("Boa noite, " +nome);
+
+			}
+
+			document.write("<br>");	
+
+			var n1,n2,soma, divisao, sub, mult;
+			n1=eval(window.prompt("Informe o primeiro numero: ",""));
+			n2=eval(window.prompt("Informe o segundo numero: ",""));
+			soma=n1+n2;
+			document.write("O valor da soma é: " + soma);
+
+			document.write("<br>");	
+
+			n1=eval(window.prompt("Informe o primeiro numero: ",""));
+			n2=eval(window.prompt("Informe o segundo numero: ",""));
+			divisao=n1/n2;
+			document.write("O valor da divisão é: " + divisao);
+
+			document.write("<br>");	
+
+			n1=eval(window.prompt("Informe o primeiro numero: ",""));
+			n2=eval(window.prompt("Informe o segundo numero: ",""));
+			sub=n1-n2;
+			document.write("O valor da Subtração é: " + sub);
+
+			document.write("<br>");	
+		
+			n1=eval(window.prompt("Informe o primeiro numero: ",""));
+			n2=eval(window.prompt("Informe o segundo numero: ",""));
+			mult=n1*n2;
+			document.write("O valor da Multiplicação é: " + mult);
+
+			document.write("<br>");	
+
+			document.write("Vamos contar até 5?");
+			document.write("<br>");
+			var i=0;
+			while (i<=5)
+			{
+				document.write("Numero " +i);
+				document.write("<br>");
+				i++;
+			}
+		</SCRIPT>
+	</HEAD>
+	<BODY>
+
+	</BODY>
+</HTML>			
